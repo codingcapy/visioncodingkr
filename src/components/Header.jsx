@@ -11,21 +11,7 @@ import { NavLink } from "react-router-dom";
 import visionCodingIcon from "/yellow1.png";
 
 export default function Header() {
-    const [navVisible, setNavVisible] = useState(false);
-
-    useEffect(() => {
-        function handleResize() {
-            if (window.innerWidth > 700) {
-                setNavVisible(true);
-            } else {
-                setNavVisible(false);
-            }
-        };
-
-        handleResize(); // Initial check
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    const [navVisible, setNavVisible] = useState(window.innerWidth > 700? true : false);
 
     function slideToggle() {
         setNavVisible(!navVisible);
@@ -42,7 +28,7 @@ export default function Header() {
                 </div>
                 <button id="hamburger-menu" className="text-3xl md:hidden" onClick={slideToggle}>&#x2630;</button>
             </div>
-            <nav id="main-nav" className={`${navVisible ? 'visible' : ''} md:block`}>
+            {navVisible && <nav id="main-nav">
                 <ul className="md:flex">
                     <li
                         className="px-5 py-2 md:py-5 text-center rounded-md transition ease-in-out duration-300  md:hidden">
@@ -70,14 +56,14 @@ export default function Header() {
                     </li>
                     <li
                         className="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="/login" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>Login</NavLink>
+                        <NavLink to="/login" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>로그인</NavLink>
                     </li>
                     <li
                         className="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="/signup" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>Signup</NavLink>
+                        <NavLink to="/signup" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>회원가입</NavLink>
                     </li>
                 </ul>
-            </nav>
+            </nav>}
             <div className="flex">
                 <NavLink to="/login"
                     className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300 md:text-2xl">
