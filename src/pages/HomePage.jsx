@@ -32,7 +32,6 @@ export default function HomePage() {
                             <p className="text-gray-400">수업 비용</p>
                             <p>100만원</p>
                         </div>
-
                     </div>
                 </section>
                 <section>
