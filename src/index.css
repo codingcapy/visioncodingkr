@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Electric-Safety';
+    src: url(../font/전기안전체_R/Electric-Safety-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'G-Market-Sans-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p {
+    font-family: 'G-Market-Sans-Medium';
+}
