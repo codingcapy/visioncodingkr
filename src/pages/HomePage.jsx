@@ -27,7 +27,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <p className="text-gray-400">과정 기간</p>
-              <p>8주 과정</p>
+              <p>8주</p>
             </div>
             <div className="text-center">
               <p className="text-gray-400">교육 방법</p>
