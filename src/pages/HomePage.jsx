@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <main className="flex-1">
       <div className="">
-        <section className="home-banner h-[400px] md:h-[600px] py-10 bg-gradient-to-t from-blue-900 to-black text-white">
+        <section className="home-banner h-[815px] md:h-[600px] py-10 bg-gradient-to-t from-blue-900 to-black text-white">
           <h1 className="text-4xl md:text-6xl text-center text-whiWte py-5">
             북미 IT 시장에서
           </h1>

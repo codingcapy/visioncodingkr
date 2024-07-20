@@ -16,7 +16,7 @@ import { RiKakaoTalkFill } from "react-icons/ri";
 export default function Footer() {
 
     return (
-        <footer className="px-5 md:py-20 max-w-[1000px] mx-auto">
+        <footer className="px-5 pt-10 md:py-20 max-w-[1000px] mx-auto">
             <div className="md:py-10 md:grid md:grid-cols-4">
                 <div className="">
                     <img src={visionCodingIcon} className="nav-element mx-auto md:mx-0" />
@@ -44,7 +44,7 @@ export default function Footer() {
                         <p className="text-lg pl-2">vision.coding</p>
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=61556365105748" className="flex md:py-3">
-                        <ImFacebook size={50}/>
+                        <ImFacebook size={50} />
                         <p className="text-lg pl-2">Facebook</p>
                     </a>
                     <a href="http://pf.kakao.com/_LaRxfxj" className="flex md:py-3">
