@@ -14,7 +14,7 @@ export default function HomePage() {
             8주 완성 코스
           </h1>
           <button className="my-10 px-10 py-5 bg-red-500 rounded-xl text-white flex flex-col mx-auto">
-            참가 신청 하기
+            참가 신청
           </button>
           <div className="md:grid grid-cols-5 mt-32 py-10 bg-blue-950">
             <div className="text-center">
