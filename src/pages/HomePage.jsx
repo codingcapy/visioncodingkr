@@ -6,11 +6,11 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl text-center text-whiWte py-5">
             북미 IT 시장에서
           </h1>
-          <h1 className="text-6xl text-center text-white">
+          <h1 className="text-4xl md:text-6xl text-center text-white">
             <span className="text-teal-500">성공적</span>으로{" "}
             <span className="text-teal-500">취업하기</span>
           </h1>
-          <h1 className="text-6xl text-center text-white py-5">
+          <h1 className="text-4xl md:text-6xl text-center text-white py-5">
             8주 완성 코스
           </h1>
           <button className="my-10 px-10 py-5 bg-red-500 rounded-xl text-white flex flex-col mx-auto">
